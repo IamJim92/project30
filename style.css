@@ -1,15 +1,51 @@
+.off {
+  visibility: hidden;
+}
+.pre-game {
+  display: flex;
+  justify-content: center;
+}
+#on-button {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  margin: 0 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-color: rgb(0 0 0);
+  background-color: rgb(146 239 255);
+}
+body {
+  /* background-image: url("./venice.jpg"); */
+  /* background-image: url("./background.svg"); */
+  /* background-color: #cccccc; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
 /* #### GAMEBOARD #### */
+.game {
+  opacity: 0.97;
+  width: 76%;
+  margin: auto;
+  height: 101vh;
+  border: 1px solid rgb(255 255 255);
+  border-radius: 5px;
+  background-color: #ffffff;
+  top: -32px;
+  position: relative;
+}
 .game-board {
-  /* background-color: brown; */
   margin: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .game-row {
+  margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
-  /* background-color: aquamarine; */
 }
 .game-row input {
   width: 100px;
@@ -17,22 +53,32 @@
   text-align: center;
   line-height: 75px;
   font-size: 30px;
-  background-color: blanchedalmond;
+  background-color: #2e2e2e;
   outline: none;
   caret-color: transparent;
+  border-radius: 6%;
+  border: none;
+  color: #ffffff;
 }
 .active, input:active, input:focus {
-  border: 2px solid red;
+  /* border: 2px solid #be8e57; */
   outline: none;
+  /* box-shadow: 0px 0px 0px 5px rgb(146 239 255); */
+  box-shadow: 0px 0px 0px 5px rgb(228, 231, 25);
+  /* width: 105px; */
+  /* height: 105px; */
 }
 .green {
-  background-color: green !important;
+  background-color: #3fef49c7 !important;
+  color: #2e2e2e !important;
 }
 .orange {
-  background-color: orange !important;
+  background-color: #ff8a2dc7 !important;
+  color: #2e2e2e !important;
 }
 .red {
-  background-color: red !important;
+  background-color: #9b1313c7 !important;
+  /* color: #2e2e2e !important; */
 }
 
 /* #### KEYBOARD #### */
@@ -41,16 +87,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 84px;
 }
-
 #keyboard-cont div {
   display: flex;
-}
-  
+} 
 .second-row {
   margin: 0.5rem 0;
-}
-  
+}  
 .keyboard-button {
   font-size: 1rem;
   font-weight: 700;
@@ -58,4 +102,30 @@
   margin: 0 2px;
   cursor: pointer;
   text-transform: uppercase;
+  border-color: rgb(0 0 0);
+  background-color: rgb(146 239 255);
+}
+.keyboard-button:hover {
+  background-color: rgb(87, 195, 214);
+}
+.enter-key {
+  background-color: rgb(177, 236, 109);
+}
+.enter-key:hover {
+  background-color: rgb(137, 201, 64);
+}
+.clr-key {
+  background-color: rgb(224, 101, 101);
+}
+.clr-key:hover {
+  background-color: rgb(216, 69, 69);
+}
+
+/* #### CELEBRATION #### */
+.celebration {
+  height: 497px;
+  background-image: url(./airplane-plane.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

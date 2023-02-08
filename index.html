@@ -10,54 +10,64 @@
 </head>
 <body>
     
-    <div class="game-board">
-        <div class="game-row">
-            <input type="text" class="box letter1 active" placeholder="?" maxlength="1">
-            <input type="text" class="box letter2" placeholder="?" maxlength="1">
-            <input type="text" class="box letter3" placeholder="?" maxlength="1">
-            <input type="text" class="box letter4" placeholder="?" maxlength="1">
-            <input type="text" class="box letter5" placeholder="?" maxlength="1">
-            <input type="text" class="box letter6" placeholder="?" maxlength="1">
-        </div>
+    <div class="pre-game">
+        <button id="on-button" class="start-button">Start Game</button>
     </div>
+    
+    <div class="game off">
 
-    <!-- KEYBOARD -->
-    <div id="keyboard-cont">
-        <div class="first-row">
-            <button class="keyboard-button" value="q">q</button>
-            <button class="keyboard-button" value="w">w</button>
-            <button class="keyboard-button" value="e">e</button>
-            <button class="keyboard-button" value="r">r</button>
-            <button class="keyboard-button" value="t">t</button>
-            <button class="keyboard-button" value="y">y</button>
-            <button class="keyboard-button" value="u">u</button>
-            <button class="keyboard-button" value="i">i</button>
-            <button class="keyboard-button" value="o">o</button>
-            <button class="keyboard-button" value="p">p</button>
+        <div class="game-board">
+            <div class="game-row">
+                <input type="text" class="box letter1 active" placeholder="?" maxlength="1">
+                <input type="text" class="box letter2" placeholder="?" maxlength="1">
+                <input type="text" class="box letter3" placeholder="?" maxlength="1">
+                <input type="text" class="box letter4" placeholder="?" maxlength="1">
+                <input type="text" class="box letter5" placeholder="?" maxlength="1">
+                <input type="text" class="box letter6" placeholder="?" maxlength="1">
+            </div>
         </div>
-        <div class="second-row">
-            <button class="keyboard-button" value="a">a</button>
-            <button class="keyboard-button" value="s">s</button>
-            <button class="keyboard-button" value="d">d</button>
-            <button class="keyboard-button" value="f">f</button>
-            <button class="keyboard-button" value="g">g</button>
-            <button class="keyboard-button" value="h">h</button>
-            <button class="keyboard-button" value="j">j</button>
-            <button class="keyboard-button" value="k">k</button>
-            <button class="keyboard-button" value="l">l</button>
+
+        <!-- KEYBOARD -->
+        <div id="keyboard-cont">
+            <div class="first-row">
+                <button class="keyboard-button" value="q">q</button>
+                <button class="keyboard-button" value="w">w</button>
+                <button class="keyboard-button" value="e">e</button>
+                <button class="keyboard-button" value="r">r</button>
+                <button class="keyboard-button" value="t">t</button>
+                <button class="keyboard-button" value="y">y</button>
+                <button class="keyboard-button" value="u">u</button>
+                <button class="keyboard-button" value="i">i</button>
+                <button class="keyboard-button" value="o">o</button>
+                <button class="keyboard-button" value="p">p</button>
+            </div>
+            <div class="second-row">
+                <button class="keyboard-button" value="a">a</button>
+                <button class="keyboard-button" value="s">s</button>
+                <button class="keyboard-button" value="d">d</button>
+                <button class="keyboard-button" value="f">f</button>
+                <button class="keyboard-button" value="g">g</button>
+                <button class="keyboard-button" value="h">h</button>
+                <button class="keyboard-button" value="j">j</button>
+                <button class="keyboard-button" value="k">k</button>
+                <button class="keyboard-button" value="l">l</button>
+            </div>
+            <div class="third-row">
+                <button class="keyboard-button clr-key" value="clr">Clr</button>
+                <button class="keyboard-button" value="z">z</button>
+                <button class="keyboard-button" value="x">x</button>
+                <button class="keyboard-button" value="c">c</button>
+                <button class="keyboard-button" value="v">v</button>
+                <button class="keyboard-button" value="b">b</button>
+                <button class="keyboard-button" value="n">n</button>
+                <button class="keyboard-button" value="m">m</button>
+                <button class="keyboard-button enter-key" value="enter">Enter</button>
+            </div>
+            <div id="guess-count-holder"></div>
         </div>
-        <div class="third-row">
-            <button class="keyboard-button" value="del">Del</button>
-            <button class="keyboard-button" value="z">z</button>
-            <button class="keyboard-button" value="x">x</button>
-            <button class="keyboard-button" value="c">c</button>
-            <button class="keyboard-button" value="v">v</button>
-            <button class="keyboard-button" value="b">b</button>
-            <button class="keyboard-button" value="n">n</button>
-            <button class="keyboard-button" value="m">m</button>
-            <button class="keyboard-button" value="enter">Enter</button>
+        <div class="celebration off">
         </div>
-        <div id="guess-count-holder"></div>
+        
     </div>
 </body>
 </html>
