@@ -3,7 +3,8 @@ const boxs      = gameRow.querySelectorAll(".box");
 const keys      = document.querySelectorAll(".keyboard-button");
 const activeBox = document.getElementsByClassName(" active");
 let userGuess   = [];
-let guessCount  = "";
+let guessCount  = 0;
+let endGame     = "";
 
 document.addEventListener("keyup", (e) => {
     userTyping(e);
@@ -14,13 +15,6 @@ let guessCountDiv  = document.getElementById("guess-count-holder");
 const pElem = document.createElement('p');
 pElem.innerHTML = "Guess Count: " + guessCount;
 guessCountDiv.appendChild(pElem);
-
-
-    // NEEDS TO BE INSIDE A LOOP ?
-    
-        // for (let guessCount = 0; guessCount < 99; guessCount++) {}
-        
-      
 
 // active class listener
 for (let i = 0; i < boxs.length; i++) {
@@ -40,7 +34,7 @@ for (let i = 0; i < keys.length; i++) {
             userGuess = [];
             userGuess.push(boxs[0].value, boxs[1].value, boxs[2].value, boxs[3].value, boxs[4].value, boxs[5].value);
             console.log(userGuess);
-            // guessCount += 1;
+            guessCount += 1;
             theGame(userGuess);
         } else if (input === "del") {
             activeBox[0].value = "";
@@ -50,6 +44,21 @@ for (let i = 0; i < keys.length; i++) {
         }
     });
 }
+
+// do {
+
+// setTimeout(() => {
+//     if (guessCount === 5) {
+//         endGame = "true";
+//     }
+//     console.log(endGame, guessCount);
+// }, 1000);
+// // CHECK - set endGame if needed
+    
+
+// } while (endGame == "");   
+
+
 
 // functions
 function userTyping(e) {
@@ -88,6 +97,7 @@ function theGame(answerArray) {
     letterCheck(answerArray[3], "i", 3);
     letterCheck(answerArray[4], "c", 4);
     letterCheck(answerArray[5], "e", 5);
+    // RETURN 1 if green, then if 6 -> end game
     return;
 }
 
