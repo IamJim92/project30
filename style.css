@@ -1,0 +1,61 @@
+/* #### GAMEBOARD #### */
+.game-board {
+  /* background-color: brown; */
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game-row {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: aquamarine; */
+}
+.game-row input {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  background-color: blanchedalmond;
+  outline: none;
+  caret-color: transparent;
+}
+.active, input:active, input:focus {
+  border: 2px solid red;
+  outline: none;
+}
+.green {
+  background-color: green !important;
+}
+.orange {
+  background-color: orange !important;
+}
+.red {
+  background-color: red !important;
+}
+
+/* #### KEYBOARD #### */
+#keyboard-cont {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#keyboard-cont div {
+  display: flex;
+}
+  
+.second-row {
+  margin: 0.5rem 0;
+}
+  
+.keyboard-button {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  margin: 0 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
